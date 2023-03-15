@@ -17,3 +17,8 @@
   border-radius: 40px;
   box-shadow: 0 4px 10px rgba(228, 14, 14, 0.24);
 }
+
+.inputForm{
+    width: 100%;
+    text-align: center;
+}
