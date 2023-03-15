@@ -1,0 +1,19 @@
+.chat_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.img_container{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 12/7;
+}
+
+.chatImg{
+  /* object-fit: cover; */
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(228, 14, 14, 0.24);
+}
