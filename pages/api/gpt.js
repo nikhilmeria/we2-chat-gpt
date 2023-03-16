@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     model: "text-davinci-003",
     prompt: `Answer to my prompt.\n
     Topic: ${prompt}\n`,
-    max_tokens: 500,
+    max_tokens: 600,
     temperature: 1,
     presence_penalty: 0,
     frequency_penalty: 0,

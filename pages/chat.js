@@ -35,6 +35,7 @@ function Chat() {
      setOnErr(true);
     } finally {
      setIsLoading(false);
+     e.target.reset(); // clears the input field 
     }
    }
    
@@ -44,7 +45,7 @@ function Chat() {
   <>
    <div className={chatStyle.chat_container}>
     <Link href="/">
-     <p>back</p>
+     <h6 className="mt-1 h6">Home</h6>
     </Link>
     <div className={chatStyle.img_container}>
      <Image
@@ -56,22 +57,32 @@ function Chat() {
     </div>
     <Form className={chatStyle.inputForm} onSubmit={handleSubmit}>
      <Form.Group className="mt-3" controlId="prompt-input">
-      <Form.Label className="mt-1">What's your ques?</Form.Label>
+      <Form.Label className="mt-1 h4">What's your question?</Form.Label>
       <Form.Control name="prompt" placeholder="type here" maxLength={150} />
      </Form.Group>
-     <Button type="submit" className="mt-3" disabled={isLoading}>
+     <Button type="submit" className="mt-3 mb-3" disabled={isLoading}>
       Submit
      </Button>
     </Form>
-    {isLoading && <Spinner className="mt-3" animation="border"></Spinner>}
+    {isLoading && (
+     <Spinner className="mt-3" animation="border" variant="primary"></Spinner>
+    )}
     {onErr && (
      <ToastContainer position="top-end" className="me-3 mt-3">
       <Toast autohide delay={3000} bg={"danger"}>
-       <Toast.Body color='white'>Something went wrong, try again.</Toast.Body>
+       <Toast.Body color="white">Something went wrong, try again.</Toast.Body>
       </Toast>
      </ToastContainer>
     )}
-    {gptResp && <h5 className="h5">{gptResp}</h5>}
+    {/* {gptResp && <h5 className="h5 mt-3">{gptResp}</h5>} */}
+    {gptResp && (
+     <Form.Control
+      as="textarea"
+      rows={9}
+      className="fw-bold fs-6 "
+      value={gptResp}
+     />
+    )}
    </div>
   </>
  );
