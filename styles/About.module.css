@@ -4,3 +4,8 @@
     width: fit-content;
     height: fit-content;
 }
+@media (min-width: 1200px) {
+    .about_container{
+        margin-top: 5vh;
+    } 
+}
