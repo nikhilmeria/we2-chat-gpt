@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     prompt: `Answer to my prompt.\n
     Topic: ${prompt}\n`,
     max_tokens: 600,
-    temperature: 1,
+    temperature: 0,
     presence_penalty: 0,
     frequency_penalty: 0,
   });

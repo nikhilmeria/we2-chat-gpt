@@ -12,12 +12,8 @@ function Chat() {
  const handleSubmit= async(e)=>{
    e.preventDefault();
 
-   console.log("Button CLicked : ", e.target);
-
    const formData = new FormData(e.target);
    const prompt= formData.get("prompt")?.toString().trim();
-
-   console.log("Prompt : ", prompt);
 
    if(prompt){
     try {
@@ -44,8 +40,8 @@ function Chat() {
  return (
   <>
    <div className={chatStyle.chat_container}>
-    <Link href="/">
-     <h6 className="mt-1 h6">Home</h6>
+    <Link href="/" style={{textDecoration: "none"}}>
+     <h6 className="mt-1 h4">&larr; Home</h6>
     </Link>
     <div className={chatStyle.img_container}>
      <Image

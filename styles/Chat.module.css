@@ -22,3 +22,17 @@
     width: 100%;
     text-align: center;
 }
+
+@media (max-width: 420px) {
+  .img_container{
+    position: relative;
+    top: 2em;
+    width: 100%;
+    aspect-ratio: 12/7;
+  }
+  .inputForm{
+    width: 90%;
+    text-align: center;
+    margin-top: 5em;
+  } 
+}
