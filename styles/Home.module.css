@@ -86,10 +86,10 @@
   max-width: 300px;
 }
 .card:nth-child(1n-2) {
-  background-color: rgb(176, 201, 241);
+  background-color: rgba(243, 225, 25, 0.968);
 }
 .card:nth-child(3n-2) {
-  background-color: rgba(243, 225, 25, 0.968);
+  background-color: rgb(176, 201, 241);
 }
 @media (max-width: 420px) {
   .card:nth-child(odd) {

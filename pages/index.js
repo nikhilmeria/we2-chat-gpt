@@ -7,9 +7,9 @@ export default function Home() {
  return (
   <div className={styles.container}>
    <Head>
-    <title>we2-chat App</title>
-    <meta name="description" content="chat with chatGpt" />
-    <link rel="icon" href="/favicon.ico" />
+    <title>we2 App</title>
+    <meta name="description" content="Chat with chatGpt" />
+    <link rel="icon" href="/images/gptLogo.png" />
    </Head>
 
    <main className={styles.main}>
@@ -30,15 +30,12 @@ export default function Home() {
       <p>Chat with chatGpt here, if you still dnt have an account.</p>
      </Link>
 
-     <Link href="https://nextjs.org/learn" className={styles.card}>
+     <Link href="./gita" className={styles.card}>
       <h2>Bhagvat Gita &rarr;</h2>
       <p>Learn about Bhagavad Gita by harnessing the power of GPT.</p>
      </Link>
 
-     <Link
-      href="https://github.com/vercel/next.js/tree/canary/examples"
-      className={styles.card}
-     >
+     <Link href="./exp" className={styles.card}>
       <h2>Examples &rarr;</h2>
       <p>
        Discover and Learn to use this app by reading through the various
@@ -46,12 +43,7 @@ export default function Home() {
       </p>
      </Link>
 
-     <Link
-      href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={styles.card}
-     >
+     <Link href="./about" className={styles.card}>
       <h2>About Us &rarr;</h2>
       <p>
        We wish 2 unify hinduism with tech, 4 positive impact on community. Click
